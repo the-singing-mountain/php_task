@@ -28,7 +28,7 @@
                     'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
                     'is_admin' => TRUE
                 ];
-                
+
                 $userModel->save($data);
 
                 //Setting Session Data
